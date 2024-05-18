@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="AOS/aos.css" rel="stylesheet">
+</head>
+
+<body class=" p-0 m-0 box-border ">
+    <header class=" container_navbar flex items-center   justify-center w-full h-16  absolute ">
+        <div id="navbar" class=" content_navbar   ">
+
+            <h2 class=" text-3xl pl-10  text-black font-bold font-sans ">Team MH.Code</h2>
+            <input type="checkbox" name="" id="check" />
+
+            <label for="check" class="icons">
+                <i class="bx bx-menu" id="menu-icon"></i>
+                <i class="bx bx-x" id="bx-icon"></i>
+            </label>
+            <ul class=" content_nav  justify-between  flex items-center   ">
+                <li class=" mr-8 "><a style="--i: 0"
+                        class=" font-semibold  px-5 py-2 hover:bg-white rounded-3xl hover:text-black  duration-300 "
+                        href="#home">Home</a></li>
+                <li class=" mr-8 "><a style="--i: 2"
+                        class=" font-semibold  px-5 py-2 hover:bg-white rounded-3xl hover:text-black  duration-300 "
+                        href="#Apout">About</a></li>
+                <li class=" mr-8 "><a style="--i: 1"
+                        class="  font-semibold px-5 py-2 hover:bg-white rounded-3xl hover:text-black  duration-300 "
+                        href="#Services">Services</a></li>
+                <li class=" mr-8 "><a style="--i: 3"
+                        class=" font-semibold  px-5 py-2 hover:bg-white rounded-3xl hover:text-black  duration-300 "
+                        href="#Team">Team specifications</a></li>
+                <li class=" mr-8 "><a style="--i: 3"
+                        class=" font-semibold  px-5 py-2 hover:bg-white rounded-3xl hover:text-black  duration-300 "
+                        href="">Contact</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+
+
+    <div class="slider w-full h-screen relative" id="home">
+        <div class="slide  w-full h-full overflow-hidden relative items-center justify-center  hidden " id="slidestop">
+            <div class="item_slider w-full h-full flex items-center justify-center ">
+                <img src="img/slider_Home/image1.jpg" class="w-full h-full -z-0 object-cover" alt="">
+
+                <div
+                    class="item_slide z-20 max-w-screen-xl  min-w-full  h-52 absolute flex justify-around gap-96 items-center overflow-hidden  ">
+                    <div class="text_slider text-white " id="textSlider">
+                        <h1 class="text-5xl">Hello I'am</h1>
+                        <h3 class="text-2xl ">Mohamed Al-Halabe</h3>
+                    </div>
+
+                    <div class="logo_img_slide  w-48 h-48 rounded-full border-2 border-white border-solid overflow-hidden"
+                        id="myimg">
+                        <img class="w-full h-full object-cover" src="img/slider_Home/M.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide   w-full h-full overflow-hidden relative items-center justify-center  hidden ">
+            <div class="item_slider  w-full h-full flex items-center justify-center">
+                <img class="w-full h-full -z-0 object-cover" src="img/slider_Home/image2.jpg" alt="">
+
+                <div
+                    class="item_slide   z-20 max-w-screen-xl  min-w-full  h-52 absolute flex justify-around gap-96 items-center overflow-hidden ">
+                    <div class="text_slider  text-white" id="textSlider">
+                        <h1 class="text-5xl ">Hello I'am </h1>
+                        <h3 class="text-2xl">wesam-fnjnf </h3>
+                    </div>
+
+                    <div class="logo_img_slide  w-48 h-48 rounded-full border-2 border-white border-solid overflow-hidden"
+                        id="myimg">
+                        <img src="img/slider_Home/man1.jfif" class="w-full h-full object-cover" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide   w-full h-full overflow-hidden relative items-center justify-center  hidden ">
+            <div class="item_slider w-full h-full flex items-center justify-center">
+                <img class="w-full h-full -z-0 object-cover" src="img/slider_Home/image3.jpg" alt="">
+
+                <div
+                    class="item_slide  z-20 max-w-screen-xl  min-w-full  h-52 absolute flex justify-around gap-96 items-center overflow-hidden ">
+                    <div class="text_slider text-white" id="textSlider">
+                        <h1 class="text-5xl">Hello I'am</h1>
+                        <h3 class="text-2xl"> Omer-frfr</h3>
+                    </div>
+
+                    <div class="logo_img_slide  w-48 h-48 rounded-full border-2 border-white border-solid overflow-hidden"
+                        id="myimg">
+                        <img src="img/slider_Home/man3.jfif" class=" w-full h-full object-cover" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button
+            class="prev w-10 h-10 rounded-full absolute outline-none z-30 cursor-pointer top-2/4 left-0 text-3xl text-white hover:bg-slate-400 hover:text-black  "
+            onclick=" prevSlider( ) ">&#10094</button>
+        <button
+            class="next  w-10 h-10 rounded-full absolute outline-none z-30 cursor-pointer top-2/4 right-0 text-3xl text-white hover:bg-slate-400 hover:text-black  "
+            onclick=" nextSlider( ) ">&#10095</button>
+    </div>
+
+
+
+    <div class="apout w-full pt-16   h-fit    bg-slate-300   " id="Apout">
+        <div class="title_apout h-16 flex items-center  w-full justify-center   ">
+            <h2 class="  text-4xl "> About</h2>
+        </div>
+        <div class="box_apot flex justify-around w-full flex-wrap pt-11 gap-3">
+            <div class="item_box_apout w-96 h-fit border-gray-5 rounded-2xl  overflow-hidden" data-aos="flip-left">
+                <div class="profile flex bg-sky-600 w-full h-60 items-center justify-around  ">
+                    <div class="name_profile">
+                        <h2 class=" text-2xl font-serif font-bold  text-white">Mohamed Hl</h2>
+                    </div>
+                    <div class="img_profile w-36  h-36 rounded-full  overflow-hidden border-solid border-4 ">
+                        <img src="img/card/man1.jfif" class="w-full h-full rounded-full object-cover   " alt="">
+                    </div>
+
+                </div>
+                <div class="apout_Text_profile w-96 p-4 h-fit  overflow-hidden bg-slate-50 ">
+                    <p class="leading-7 text-base text-gray-600 font-serif font-semibold text-wrap ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et at iusto dignissimos pariatur illum!
+                        Ut
+                        excepturi consequatur dignissimos animi. Eius ea dolorum fugit autem facere animi officiis iure
+                        eum?
+                        Hic molestias consequatur corrupti reiciendis, cumque doloribus voluptatum explicabo recusandae
+                        nobis!
+                    </p>
+                </div>
+            </div>
+            <div class="item_box_apout w-96 h-fit border-gray-5 rounded-2xl  overflow-hidden" data-aos="flip-up">
+                <div class="profile flex bg-sky-600 w-full h-60 items-center justify-around  ">
+                    <div class="name_profile">
+                        <h2 class=" text-2xl font-serif font-bold  text-white">Mohamed Hl</h2>
+                    </div>
+                    <div class="img_profile w-36  h-36 rounded-full  overflow-hidden border-solid border-4 ">
+                        <img src="img/slider_Home/man2.jfif" class="w-full h-full rounded-full object-cover  " alt="">
+                    </div>
+
+                </div>
+                <div class="apout_Text_profile w-96 p-4 h-fit  overflow-hidden bg-slate-50 ">
+                    <p class="leading-7 text-base text-gray-600 font-serif font-semibold ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et at iusto dignissimos pariatur illum!
+                        Ut
+                        excepturi consequatur dignissimos animi. Eius ea dolorum fugit autem facere animi officiis iure
+                        eum?
+                        Hic molestias consequatur corrupti reiciendis, cumque doloribus voluptatum explicabo recusandae
+                        nobis!
+                    </p>
+                </div>
+            </div>
+            <div class="item_box_apout w-96 h-fit border-gray-5 rounded-2xl  overflow-hidden" data-aos="flip-right">
+                <div class="profile flex bg-sky-600 w-full h-60 items-center justify-around  ">
+                    <div class="name_profile">
+                        <h2 class=" text-2xl font-serif font-bold  text-white">Mohamed Hl</h2>
+                    </div>
+                    <div class="img_profile w-36  h-36 rounded-full  overflow-hidden border-solid border-4 ">
+                        <img src="img/slider_Home/man3.jfif" class="w-full h-full rounded-full object-cover   " alt="">
+                    </div>
+
+                </div>
+                <div class="apout_Text_profile w-96 p-4 h-fit  overflow-hidden bg-slate-50 ">
+                    <p class="leading-7 text-base text-gray-600 font-serif font-semibold ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et at iusto dignissimos pariatur illum!
+                        Ut
+                        excepturi consequatur dignissimos animi. Eius ea dolorum fugit autem facere animi officiis iure
+                        eum?
+                        Hic molestias consequatur corrupti reiciendis, cumque doloribus voluptatum explicabo recusandae
+                        nobis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contantServices w-full pt-16    h-fit    bg-slate-300" id="Services">
+        <div class="title_Services h-16 flex items-center  w-full justify-center   " data-aos="fade-up"
+            data-aos-duration="1000">
+            <h2 class="  text-4xl "> Services</h2>
+        </div>
+        <div
+            class="boxServices w-4/5 h-fit flex overflow-hidden m-auto gap-y-24  flex-row flex-wrap justify-around pt-16  ">
+
+            <div class="boxS text-center  w-2/5 h-fit " data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class="imgSer w-fit m-auto text-center h-32">
+                    <img src="img/img_services/icons8-web-48.png" class="w-full object-contain h-full" alt="">
+                </div>
+                <h2 class="text-xl font-semibold">Website development</h2>
+                <p class="font-semibold">Developing a website and an integrated online store
+                </p>
+            </div>
+            <div class="boxS w-2/5 h-fit  text-center" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class="imgSer w-fit m-auto text-center h-32">
+                    <img src="img/img_services/icons8-smartphone-tablet-64.png" class="w-full object-contain h-full"
+                        alt="">
+                </div>
+                <h2 class="text-xl font-semibold">Mobile application development</h2>
+                <p class="font-semibold">Your project gets maximum effort as we conceptualize, create, and test
+                    award-winning apps, using the latest tech practices.
+                </p>
+            </div>
+            <div class="boxS w-2/5 h-fit  text-center" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
+                <div class="imgSer w-fit m-auto text-center h-32">
+                    <img src="img/img_services/icons8-security-portal-48.png" class="w-full object-contain h-full"
+                        alt="">
+                </div>
+                <h2 class="text-xl font-semibold">Cyber ​​security</h2>
+                <p class="font-semibold">Discovering vulnerabilities in websites and applications and protecting them
+                    from hackers
+                </p>
+            </div>
+            <div class="boxS w-2/5 h-fit  text-center" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
+                <div class="imgSer w-fit m-auto text-center h-32">
+                    <img src="img/img_services/icons8-settings-48.png" class="w-full object-contain h-full" alt="">
+                </div>
+                <h2 class="text-xl font-semibold">Custom software solutions</h2>
+                <p class="font-semibold">Get your custom software solutions to optimize business processes, measure
+                    productivity, increase effectiveness, and address specific business needs.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="apoutTeam w-full pt-20    h-fit    bg-slate-300 " id="Team">
+        <div class="title_Projects h-16 flex items-center  grow max-w-3xl text-wrap m-auto  justify-center mb-5  "
+            data-aos="fade-up">
+            <h2 class="  text-3xl  text-center"> Why Hire Dedicated Development Team from XB Software
+            </h2>
+        </div>
+        <div class="container-tabel">
+            <div class="tabel-row" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title"></div>
+                <div class="item-tabel  border-x">
+                    <div>
+                        TEAM OF FREELANCERS
+                    </div>
+                </div>
+                <div class="item-tabel active-before  ">
+                    <div>DEDICATED DEVELOPMENT TEAM FROM XB SOFTWARE</div>
+                </div>
+            </div>
+            <div class="item-tabel-row " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title-text">
+                    <div class="title-before">PROJECT COST
+                    </div>
+                </div>
+                <div class="item-tabel-text  border-x">
+                    <div>
+                        The developer’s code may not be exactly what the client wants and may have to be re-written,
+                        which implies additional costs.
+                    </div>
+                </div>
+                <div class="item-tabel-text   ">
+                    <div>In the long run, hiring a development team with the business analyst and QA engineer will cut
+                        costs by reducing rework.</div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="item-tabel-row " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title-text">
+                    <div class="title-before">TECHNICAL EXPERTISE
+                    </div>
+                </div>
+                <div class="item-tabel-text  border-x">
+                    <div>
+                        The lack of technical expertise may become another headache for a client when communicating with
+                        a developer.
+                    </div>
+                </div>
+                <div class="item-tabel-text   ">
+                    <div>Experienced business analysts easily convert customer’s business needs into functional
+                        specifications for developers and QA engineers.</div>
+                </div>
+            </div>
+
+
+            <div class="item-tabel-row " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title-text">
+                    <div class="title-before">WORKFORCE EFFICIENCY
+                    </div>
+                </div>
+                <div class="item-tabel-text  border-x">
+                    <div>
+                        Decreased productivity of developers caused the need to interact with business owners and
+                        participate in long-time meetings?
+                    </div>
+                </div>
+                <div class="item-tabel-text   ">
+                    <div>Early identifying defects or misinterpreted requirements and providing feedback asap.</div>
+                </div>
+            </div>
+
+            <div class="item-tabel-row " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title-text">
+                    <div class="title-before">COMMUNICATION
+
+                    </div>
+                </div>
+                <div class="item-tabel-text  border-x">
+                    <div>
+                        Weak soft developer skills (e.g., communication, teamwork, open-mindedness, etc.) may become a
+                        reason for miscommunication that leads to rework and additional costs.
+                    </div>
+                </div>
+                <div class="item-tabel-text   ">
+                    <div>Thanks to PM’s and BA’s, the development team's attention is directed at solving technical
+                        problems only, and team members are not engaged in communication.</div>
+                </div>
+            </div>
+            <div class="item-tabel-row " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title-text">
+                    <div class="title-before">PROJECT MANAGEMENT
+
+                    </div>
+                </div>
+                <div class="item-tabel-text  border-x">
+                    <div>
+                        Due to the time gap between developers from different locations, they may fall behind schedule
+                        and miss the project deadlines.
+                    </div>
+                </div>
+                <div class="item-tabel-text   ">
+                    <div>Working at the same time and place as the development team, the project manager oversees a
+                        project flow and keeps everything on track easily.</div>
+                </div>
+            </div>
+            <div class="item-tabel-row " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title-text">
+                    <div class="title-before">SECURITY LEVEL
+
+                    </div>
+                </div>
+                <div class="item-tabel-text  border-x">
+                    <div>
+                        Uncertain and depends mainly on a freelance developer’s conscience.
+                    </div>
+                </div>
+                <div class="item-tabel-text   ">
+                    <div>High. NDA is signed, critical data, ideas, and other confidential information are secure. We
+                        ensure a secure development environment with firewall, password, encryption.</div>
+                </div>
+            </div>
+            <div class="item-tabel-row " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title-text">
+                    <div class="title-before">AVAILABILITY
+
+                    </div>
+                </div>
+                <div class="item-tabel-text  border-x">
+                    <div>
+                        Freelance developers can work over multiple projects simultaneously and prioritize other tasks
+                        ahead of yours. Also, developers can disappear, leaving your project unfinished.
+                    </div>
+                </div>
+                <div class="item-tabel-text   ">
+                    <div>Your project is always a high priority. Our web developers are available within working hours.
+                        In case of emergency, the web developer can be replaced by another professional developer to
+                        complete your project on time.</div>
+                </div>
+            </div>
+            <div class="item-tabel-row " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="item-tabel-title-text">
+                    <div class="title-before">DEDICATION LEVEL
+
+                    </div>
+                </div>
+                <div class="item-tabel-text  border-x">
+                    <div>
+                        Works over multiple projects at a time, spending time on marketing and networking to get more
+                        new projects, which can result in deadline delays.
+                    </div>
+                </div>
+                <div class="item-tabel-text item-button-before  ">
+                    <div>Assigned to a specific project and dedicates all time to it. Better positioned to focus on
+                        projects with tight deadlines.</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="cuntact w-full h-fit  pt-9 pb-8 flex flex-col items-center bg-slate-300 ">
+        <div class="title-cun">
+            <h1 class="text-3xl font-semibold">Contact Us</h1>
+        </div>
+
+        <div class="form-Cont w-1/2 h-fit pt-9">
+            <form action="" class="flex w-full flex-col flex-wrap items-center gap-y-3">
+
+                <input type="text" class=" w-96 h-8 rounded-lg pl-2" placeholder="Name" required>
+                <input type="email" class=" w-96 h-8 rounded-lg pl-2" placeholder="Email" required>
+                <input type="tel" class=" w-96 h-8 rounded-lg pl-2" placeholder="phone" required>
+                        <textarea name="" id="" class="w-96 min-h-52 rounded-lg pl-2" placeholder="Massage"></textarea>
+
+
+                        <button type="submit" class="bg-black text-white text-2xl px-6 py-3 rounded-xl">send</button>
+
+
+
+
+
+
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+        
+       
+
+
+
+
+
+
+
+    <button id="topScroll" class=" fixed w-14 text-4xl h-14 right-5 hidden  bottom-5">&#x1F51D;</button>
+
+    <script src="js/app.js"></script>
+
+    <script src="AOS/aos.js"></script>
+
+    </script>
+    <script>
+        AOS.init({
+            duration: 500,
+        });
+    </script>
+</body>
+
+</html>
